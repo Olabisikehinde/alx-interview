@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-'''The minimum operations coding challenge.
-'''
+'''The minimum operations coding challenge'''
 
 
 def minOperations(n):
     '''Computes the fewest number of operations needed to result
-    in exactly n H characters.
-    '''
+    in exactly n H characters in this file.
     if not isinstance(n, int):
         return 0
+    '''
     ops_count = 0
     clipboard = 0
     done = 1
@@ -91,5 +90,3 @@ operations: copy all (bit 1) or paste (bit 0),
 # H-(11)->HH-(01)->HHH-(11)->HHHHHH-(01)->HHHHHHHHH
 >>> minOperations(15)
 8
-
-'''
